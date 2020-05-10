@@ -213,12 +213,12 @@ if __name__ == '__main__':
 
     x = AIPlayer("X")
     x.search = 'alpha-beta'
-    x.ab_step = 5
+    x.ab_step = 8
     x.score = 1
 
     o = AIPlayer("X")
     o.search = 'alpha-beta'
-    o.ab_step = 4
+    o.ab_step = 5
     o.score = 0
 
     game = Game(x, o)
