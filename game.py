@@ -212,14 +212,18 @@ if __name__ == '__main__':
     from AIPlayer import AIPlayer
 
     x = AIPlayer("X")
-    x.search = 'minimax'
-    x.minimax_step = 4
+    x.search = 'alpha-beta'
+    x.ab_step = 5
+    x.score = 1
 
-    o = AIPlayer("O")
-    # o.search = 'minimax'
-    # o.minimax_step = 5
+    o = AIPlayer("X")
     o.search = 'alpha-beta'
-    o.ab_step = 3
+    o.ab_step = 4
+    o.score = 0
 
     game = Game(x, o)
     game.run()
+    # a = [1, 2, 3]
+    # b = [4, 5]
+    # for i, j in zip(a, b):
+    #     print(i, j)
